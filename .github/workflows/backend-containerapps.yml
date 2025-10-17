@@ -2,6 +2,9 @@ name: deploy-backend-containerapps
 on:
   push:
     branches: ["main"]
+    paths:
+      - 'backend/**'
+      - '.github/workflows/backend-containerapps.yml'
   workflow_dispatch:
 env:
   CONTAINER_APP_NAME: ca-api-ai-learning-prod
