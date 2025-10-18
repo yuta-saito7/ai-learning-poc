@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   app: { head: { title: 'AI Learning PoC' } },
   runtimeConfig: {
     public: {
-      // Production用のContainer Apps URL を設定
-      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://container-apps-sample.thankfulbush-1c2ea568.japaneast.azurecontainerapps.io'
+      // Static Web Appsポータルの「構成」>「アプリケーション設定」で設定
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || ''
     }
   }
 });
