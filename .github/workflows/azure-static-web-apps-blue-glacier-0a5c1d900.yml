@@ -32,6 +32,8 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: ".output/public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          NUXT_PUBLIC_API_BASE: "https://container-apps-sample.thankfulbush-1c2ea568.japaneast.azurecontainerapps.io"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
